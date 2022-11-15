@@ -6,17 +6,15 @@ $(document).ready(function() {
 
 function open(left, right, button) {
   TweenLite.to(left, 1.5, { width: 0 });
-  TweenLite.to(right, 1.5, { width: 0 });
-  TweenLite.to(button, 1.5, { "margin-left" : "-60px" , onComplete: function(){
-     // Remove doors and button
+  TweenLite.to(right, 1.5, { width: 0, onComplete: function(){
       left.parent().remove();
-      button.remove();
   }});
 }
 
 function unlock(el){
   TweenLite.to(el, 0.5, { transform: "rotate(45deg)", onComplete: function(){
       open($(".door .left"), $(".door .right"), el);
+      el.remove();
   }})
 }
 
