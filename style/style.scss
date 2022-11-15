@@ -34,20 +34,18 @@ canvas {
 
 body {
     @include size(100%);
-    background-color: #222;
-    background-image: url('https://drive.google.com/uc?export=view&id=0BzFF7FmbJUo5X0NEUXFVd0NBcWc');
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
     &:after {
-        content: '';
-        @include size(100%);
-        @include abs-pos;
-        background-color: rgba(0, 0, 0, 0.1);
-        z-index: 1;
-        animation: thunder-bg 6s infinite;
+        // content: '';
+        // @include size(100%);
+        // @include abs-pos;
+        // background-color: rgb(255, 255, 255);
+        // z-index: 1;
+        // animation: thunder-bg 6s infinite;
     }
 }
 
@@ -109,7 +107,7 @@ $color2: rgba(59,
     }
 }
 
-.lock{
+.lock, .cadenas{
     img{
         position: absolute;
         top: 0;
@@ -133,79 +131,72 @@ html, .door{
     overflow: hidden;
 }
 
-body{
-  font-size: 10pt;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
 
 h1{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 200px;
-  width: 200px;
-  text-align: center;
-  font-family: arial;
-  font-size: 50px;
-  margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-family: arial;
+    font-size: 50px;
+    margin: auto;
 }
 
 .door{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
 .door .left,
 .door .right{
-  font-size: 10pt;
-  display: inline-block;
-  width: calc(50% - 2.5px);
-  height: 100%;
-  background: #313131;
+    font-size: 10pt;
+    display: inline-block;
+    width: calc(50%);
+    height: 100%;
+    background: #313131;
 }
 
 .door .left{
-  float: left;
-  border-right: solid 2.5px #111;
+    float: left;
+    border-right: solid 5px #111;
 }
 
 .door .right{
-  float: right;
-  border-left: solid 2.5px #111;
+    float: right;
+    border-left: solid 5px #111;
 }
 
-.enter{
-  cursor: pointer;
-  display: block;
-  background: #222;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 30px;
-  width: 50px;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 5px;
-  z-index: 1;
-  position: absolute;
-  padding: 5px 10px;
-  margin: auto;
-  color: #ccc;
-  border: solid 3px black;
+.lock, .cadenas {
+    cursor: pointer;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    width: 0px;
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    padding: 5px 100px;
+    margin: auto;
+    color: #ccc;
 }
 
-.enter:hover{
-  color: orange;
+#phrase1
+#phrase2
+{
+    color: white;
 }
+
 
 // body {
 //     font-family: 'Open Sans', sans-serif;
@@ -213,3 +204,9 @@ h1{
 //     line-height: 1.5;
 //     background-color: #333;
 // }
+
+
+.home {
+    background-color: #fff;
+    height: 100vh;
+}
