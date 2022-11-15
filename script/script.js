@@ -6,15 +6,17 @@ $(document).ready(function() {
 
 function open(left, right, button) {
   TweenLite.to(left, 1.5, { width: 0 });
-  TweenLite.to(right, 1.5, { width: 0, onComplete: function(){
+  TweenLite.to(right, 1.5, { width: 0 });
+  TweenLite.to(button, 1.5, { "margin-left" : "-60px" , onComplete: function(){
+     // Remove doors and button
       left.parent().remove();
+      button.remove();
   }});
 }
 
 function unlock(el){
   TweenLite.to(el, 0.5, { transform: "rotate(45deg)", onComplete: function(){
       open($(".door .left"), $(".door .right"), el);
-      el.remove();
   }})
 }
 
@@ -220,7 +222,28 @@ animloop();
 // define a repeating action
 setInterval(function() {
   $( document ).ready(function() {
-      $("#phrase1").fadeIn(5000);
-      $("#phrase1").fadeOut(5000);
+      $("#sentence1").fadeIn(2000);
+      $("#sentence1").fadeOut(2000);
   });
 }, 1000); 
+
+setInterval(function() {
+  $( document ).ready(function() {
+      $("#sentence2").fadeIn(2000);
+      $("#sentence2").fadeOut(2000);
+  });
+}, 7000); 
+
+setInterval(function() {
+  $( document ).ready(function() {
+      $("#sentence3").fadeIn(2000);
+      $("#sentence3").fadeOut(2000);
+  });
+}, 12000); 
+
+setInterval(function() {
+  $( document ).ready(function() {
+      $("#sentence4").fadeIn(2000);
+      $("#sentence4").fadeOut(2000);
+  });
+}, 19000); 
