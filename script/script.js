@@ -246,4 +246,10 @@ setInterval(function() {
       $("#sentence4").fadeIn(2000);
       $("#sentence4").fadeOut(2000);
   });
-}, 19000); 
+}, 19000);
+
+function lockLightning() {
+  document.getElementById("lock-thunder").style.display = "block";
+  $("#lock-thunder").fadeOut(1300);
+  document.getElementById("unlock-thunder").style.display = "none";
+}
