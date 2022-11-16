@@ -252,3 +252,5 @@ function lockLightning() {
   document.getElementById("lock-thunder").style.display = "block";
   $("#lock-thunder").fadeOut(1300);
 }
+
+console.log("La première lettre de chaque divinité donne URL")
