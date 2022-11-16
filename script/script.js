@@ -255,6 +255,50 @@ function lockLightning() {
   orage.play();
 }
 
+
 var url = "Vous cherchez la clé n'est ce pas ? Modifiez l'URL pour l'obtenir.";
 var indice = "La première lettre de chaque divinité vous donnera la réponse";
 var réponse = "Il faut modifier lock dans l'url par key";
+
+TweenMax.to(".overlay h2", 2, {
+  delay: 1,
+  opacity: 100,
+  ease: Expo.easeInOut,
+})   
+
+TweenMax.to(".overlay h2", 2, {
+  delay: 2,
+  opacity: 0,
+  ease: Expo.easeInOut,
+})   
+
+TweenMax.to(".overlay h3", 2, {
+  delay: 4,
+  opacity: 100,
+  ease: Expo.easeInOut,
+})    
+
+TweenMax.to(".overlay h3", 2, {
+  delay: 5,
+  opacity: 0,
+  ease: Expo.easeInOut,
+})  
+
+TweenMax.to(".overlay h4", 2, {
+  delay: 7,
+  opacity: 100,
+  ease: Expo.easeInOut,
+})   
+
+
+TweenMax.to(".overlay span", 2, {
+  delay: .3,
+  opacity: 0,
+  ease: Expo.easeInOut
+})
+
+TweenMax.to(".overlay", 2, {
+  delay: 8,
+  opacity: 0,
+  ease: Expo.easeInOut
+})

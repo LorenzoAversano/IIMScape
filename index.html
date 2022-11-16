@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Oliimpus</title>
+</head>
+
+<body>
+
+<div class="overlay">
+    <h2>Vous voulez parvenir à l'Oliimpus ? </h2>
+    <h3>Ahaha pauvre mortel, pour qui vous vous prenez ?</h3>
+    <h4>Je vais quand même vous laissez une chance...</h4>
+    <h5>Pour cela, résolvez toutes les énigmes !</h5>
+</div>
+
+
+<script type="text/javascript" src="script/pluie.js"></script>
+
+<script>
+TweenMax.to(".overlay h2", 2, {
+    delay: 1,
+    opacity: 100,
+    ease: Expo.easeInOut,
+})   
+
+TweenMax.to(".overlay h2", 2, {
+    delay: 2,
+    opacity: 0,
+    ease: Expo.easeInOut,
+})   
+
+TweenMax.to(".overlay h3", 2, {
+    delay: 4,
+    opacity: 100,
+    ease: Expo.easeInOut,
+})    
+
+TweenMax.to(".overlay h3", 2, {
+    delay: 5,
+    opacity: 0,
+    ease: Expo.easeInOut,
+})  
+
+TweenMax.to(".overlay h4", 2, {
+    delay: 7,
+    opacity: 100,
+    ease: Expo.easeInOut,
+})   
+
+TweenMax.to(".overlay h4", 2, {
+    delay: 8,
+    opacity: 0,
+    ease: Expo.easeInOut,
+})   
+
+TweenMax.to(".overlay h5", 2, {
+    delay: 10,
+    opacity: 100,
+    ease: Expo.easeInOut,
+}) 
+
+TweenMax.to(".overlay h5", 2, {
+    delay: 14,
+    opacity: 0,
+    ease: Expo.easeInOut,
+}) 
+
+TweenMax.to(".overlay", 2, {
+    delay: 12,
+    opacity: 0,
+    ease: Expo.easeInOut
+})
+</script>
+
+</body>
+
+</html>
