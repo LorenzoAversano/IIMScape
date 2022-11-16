@@ -7,9 +7,10 @@ $(document).ready(function() {
 function open(left, right, lock) {
   TweenLite.to(left, 1.5, { width: 0 });
   TweenLite.to(right, 1.5, { width: 0 });
-  lock.remove(), { onComplete: function(){
+  lock.remove();
+  TweenLite.to(lock, 1.5, { onComplete: function(){
       left.parent().remove();
-  }};
+  }});
 }
 
 function unlock(el){
