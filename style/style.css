@@ -6,7 +6,8 @@
 
 @font-face {
   font-family: "DalekPinpoint";
-  src: url("../DalekPinpointBold.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../DalekPinpointBold.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 html {
   box-sizing: border-box;
@@ -37,6 +38,7 @@ body {
   position: relative;
   z-index: 0;
 }
+
 canvas {
   display: block;
   position: absolute;
@@ -211,7 +213,7 @@ h1 {
 }
 
 .key-button {
-  background-color: rgb(227, 130, 19);
+  background-color: #e38213;
   text-decoration: none;
   color: #fff;
   font-family: "DalekPinpoint";
@@ -224,6 +226,9 @@ h1 {
   width: fit-content;
   text-align: center;
   display: flex;
+}
+.key-button:hover {
+  background-color: #111;
 }
 
 .key-animation {

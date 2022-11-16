@@ -46,14 +46,6 @@ body {
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
-    &:after {
-        // content: '';
-        // @include size(100%);
-        // @include abs-pos;
-        // background-color: rgb(255, 255, 255);
-        // z-index: 1;
-        // animation: thunder-bg 6s infinite;
-    }
 }
 
 canvas {
@@ -258,6 +250,10 @@ h1{
     width: fit-content;
     text-align: center;
     display: flex;
+
+    &:hover {
+        background-color: #111;
+    }
 }
 
 .key-animation {
