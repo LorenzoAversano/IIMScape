@@ -4,13 +4,12 @@ $(document).ready(function() {
   });
 });
 
-function open(left, right, button) {
+function open(left, right, lock) {
   TweenLite.to(left, 1.5, { width: 0 });
   TweenLite.to(right, 1.5, { width: 0 });
-  TweenLite.to(button, 1.5, { "margin-left" : "-60px" , onComplete: function(){
-     // Remove doors and button
+  lock.remove();
+  TweenLite.to(lock, 1.5, { onComplete: function(){
       left.parent().remove();
-      button.remove();
   }});
 }
 
