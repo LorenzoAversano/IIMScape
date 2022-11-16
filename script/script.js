@@ -256,6 +256,7 @@ function lockLightning() {
 }
 
 
+var URL = "Vous cherchez la clé n'est ce pas ? Modifiez l'URL pour l'obtenir.";
 var url = "Vous cherchez la clé n'est ce pas ? Modifiez l'URL pour l'obtenir.";
 var indice = "La première lettre de chaque divinité vous donnera la réponse";
 var réponse = "Il faut modifier lock dans l'url par key";

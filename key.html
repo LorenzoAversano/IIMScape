@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La clé est à vous !</title>
 </head>
@@ -15,4 +16,11 @@
         <a href="home.html" class="key-button">Retour à la porte</a>
     </section>
 </body>
+<script>
+    TweenMax.to(".key-animation", 2, {
+        delay: 0.5,
+        opacity: 100,
+        ease: Expo.easeInOut,
+    })   
+</script>
 </html>
