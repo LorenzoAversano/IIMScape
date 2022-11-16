@@ -270,6 +270,37 @@ h1{
     height: 100vh;
 }
 
+ 
+
+
+@keyframes example {
+    0%   {
+        filter: brightness(1);
+        filter: contrast(1);
+        -webkit-filter: brightness(1);
+        -webkit-filter: contrast(1);
+    }
+    50%  {
+        filter: brightness(0.4);
+        filter: contrast(0.4);
+        -webkit-filter: brightness(0.4);
+        -webkit-filter: contrast(0.4);
+    }
+    100% {
+        filter: brightness(1);
+        filter: contrast(1);
+        -webkit-filter: brightness(1);
+        -webkit-filter: contrast(1);
+    }
+}
+
+#lock_home{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
 
 #lock-thunder {
     position: absolute;

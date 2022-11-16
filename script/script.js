@@ -247,6 +247,14 @@ setInterval(function() {
   });
 }, 19000);
 
+
+setTimeout(function(){
+  $( document ).ready(function() {
+    $("lock_home").css("filter", "brightness(50%)");
+});
+}, 1000);
+
+
 function lockLightning() {
   document.getElementById("lock-thunder").style.display = "block";
   $("#lock-thunder").fadeOut(1300);
