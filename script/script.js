@@ -251,5 +251,4 @@ setInterval(function() {
 function lockLightning() {
   document.getElementById("lock-thunder").style.display = "block";
   $("#lock-thunder").fadeOut(1300);
-  document.getElementById("unlock-thunder").style.display = "none";
 }
