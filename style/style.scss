@@ -252,6 +252,10 @@ h1{
     width: fit-content;
     text-align: center;
     display: flex;
+
+    &:hover {
+        background-color: #111;
+    }
 }
 
 .key-animation {
