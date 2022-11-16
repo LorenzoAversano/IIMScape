@@ -198,8 +198,39 @@ h1 {
 }
 
 .key {
-  background-image: url(../img/bob.png);
+  background-image: url(../img/success.jpg);
   mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+.key p:first-of-type {
+  color: #111;
+  font-family: "DalekPinpoint";
+  font-size: 40px;
+  text-align: center;
+}
+
+.key-button {
+  background-color: #e38213;
+  text-decoration: none;
+  color: #fff;
+  font-family: "DalekPinpoint";
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+}
+
+.key-animation {
+  mix-blend-mode: multiply;
+  display: flex;
+  margin: auto;
 }
 
 .home {
