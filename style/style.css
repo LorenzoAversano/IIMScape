@@ -6,18 +6,15 @@
 
 @font-face {
   font-family: "DalekPinpoint";
-  src: url("../fonts/DalekPinpointBold.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../fonts/DalekPinpointBold.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
   font-family: "Alata";
-  src: url("../fonts/Alata-Regular.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../fonts/Alata-Regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
   font-family: "LouisGeorgeCafe";
-  src: url("../fonts/LouisGeorgeCafe.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../fonts/LouisGeorgeCafe.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 html {
   box-sizing: border-box;
@@ -226,7 +223,7 @@ h1 {
 }
 
 .key-button {
-  background-color: #e38213;
+  background-color: rgb(227, 130, 19);
   text-decoration: none;
   color: #fff;
   font-family: "DalekPinpoint";
@@ -300,9 +297,9 @@ h1 {
   width: 100%;
   height: 100vh;
   font-family: "DalekPinpoint";
-  background: #1a1a1a;
+  background: rgb(26, 26, 26);
   top: 0%;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -520,6 +517,44 @@ footer {
 .axe-text h4 {
   font-family: "DalekPinpoint";
   margin-top: 20px;
+}
+
+.cloud1 {
+  position: absolute;
+  margin-top: -600px;
+  left: 1%;
+}
+
+.cloud2 {
+  position: absolute;
+  margin-top: -300px;
+  left: 80%;
+}
+
+.cloud3 {
+  position: absolute;
+  margin-top: -450px;
+  left: 35%;
+}
+
+.cloud4 {
+  position: absolute;
+  margin-top: -360px;
+  left: 44%;
+}
+
+.cloud5 {
+  position: absolute;
+  margin-top: -200px;
+  left: 10%;
+}
+
+.after {
+  background-color: #474747;
+}
+
+iframe {
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
