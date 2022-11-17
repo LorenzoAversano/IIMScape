@@ -402,10 +402,13 @@ h1 {
   border: 4px solid #000;
 }
 
+.home-axes {
+  padding-bottom: 100px;
+}
 .home-axes .axes-content {
   display: flex;
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   justify-content: space-around;
 }
@@ -415,13 +418,13 @@ h1 {
 .home-axes .axe h4 {
   font-family: "DalekPinpoint";
   color: #683424;
-  width: 80%;
   font-size: 26px;
   margin: 10px auto;
   justify-content: space-between;
 }
 .home-axes .axe p {
   font-family: "LouisGeorgeCafe";
+  font-size: 20px;
 }
 
 .img-enigma {
@@ -495,24 +498,13 @@ footer {
   margin: 0 auto;
   background: #fff;
   color: #ccc;
-}
-
-.logo-footer {
-  margin: 10%;
-  display: flex;
-  justify-content: center;
-}
-.logo-footer .iim img {
-  width: 120%;
-}
-.logo-footer .oliimpus img {
-  width: 120%;
+  justify-content: space-evenly;
+  padding: 200px 0 300px 0;
 }
 
 .axe-text p {
-  width: 100px;
   display: flex;
-  margin: 0 auto;
+  margin: 0 15px;
 }
 .axe-text h4 {
   font-family: "DalekPinpoint";
@@ -555,6 +547,11 @@ footer {
 
 iframe {
   border: none;
+}
+
+.img-cdeb {
+  height: 400px;
+  margin-left: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */
