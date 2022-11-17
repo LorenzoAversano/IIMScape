@@ -457,7 +457,9 @@ h1{
     .axes-content {
         display: flex;
         text-align: center;
-        margin: 163px auto;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
     }
 
     .axe {
@@ -465,16 +467,11 @@ h1{
             font-family: "DalekPinpoint";
             color: #683424;
             width: 80%;
-            margin: 0 auto; 
+            margin: 10px auto; 
             justify-content: space-between;
-    }
-
-    .axe {
-        img {
         }
-    }
     mix-blend-mode: darken;
-
+    }
 }
 
 .img-enigma{
