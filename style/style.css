@@ -6,7 +6,17 @@
 
 @font-face {
   font-family: "DalekPinpoint";
-  src: url("../DalekPinpointBold.ttf") format("truetype");
+  src: url("../fonts/DalekPinpointBold.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: "Alata";
+  src: url("../fonts/Alata-Regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: "LouisGeorgeCafe";
+  src: url("../fonts/LouisGeorgeCafe.ttf") format("truetype");
   /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 html {
@@ -106,7 +116,6 @@ html, .door {
   height: 100%;
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 h1 {
@@ -288,7 +297,6 @@ h1 {
   font-family: "DalekPinpoint";
   background: #1a1a1a;
   top: 0%;
-  opacity: 90%;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -311,6 +319,82 @@ h1 {
   cursor: pointer;
   z-index: 1000;
   background-color: orange;
+}
+
+.home-game {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/cloud-bg.png");
+  background-size: cover;
+  background-position-y: bottom;
+}
+.home-game .logo {
+  display: flex;
+  margin: auto;
+  padding: 50px;
+}
+.home-game h2 {
+  color: #111;
+  font-size: 96px;
+  text-align: center;
+  margin: 20px 10%;
+  text-transform: uppercase;
+  font-family: "Alata";
+}
+.home-game a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  font-family: "LouisGeorgeCafe";
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 50px auto;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  background-color: #6DC8E5;
+}
+.home-game a:hover {
+  background-color: #111;
+}
+
+.home-explanations {
+  font-family: "LouisGeorgeCafe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 100px 10%;
+}
+.home-explanations :nth-last-child(1) {
+  font-family: "DalekPinpoint";
+}
+
+.home-axes h3 {
+  font-family: "Alata";
+  font-style: normal;
+  font-size: 64px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.home-axes hr {
+  width: 100px;
+  margin: 20px auto;
+  border: 4px solid #000;
+}
+
+.home-axes .axes-content {
+  display: flex;
+  text-align: center;
+}
+.home-axes .axe img {
+  background-color: #6DC8E5;
 }
 
 /*# sourceMappingURL=style.css.map */

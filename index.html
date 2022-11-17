@@ -13,21 +13,68 @@
 
 <body>
 
-    <div class="overlay">
+    <!-- <div class="overlay">
         <h2>Vous voulez parvenir à l'Oliimpus ? </h2>
         <h3>Ahaha pauvre mortel, pour qui vous vous prenez ?</h3>
         <h4>Je vais quand même vous laisser une chance...</h4>
         <h5>Pour cela, résolvez toutes les énigmes !</h5>
-    </div>
+    </div> -->
 
-    <section>
+    <section class="home-game">
         <img src="img/logo.png" alt="" class="logo">
-        <h1></h1>
+        <h2>Deviens le meilleur de toi même</h2>
         <a href="lock.html">Lancer le jeu</a>
     </section>
 
+    <section class="home-explanations">
+        <p>Lancez-vous dans une nouvelle aventure ! Enquête et mythologie ne font qu’un pour vous ouvrir une nouvelle voie.</p>
+        <p>5 dieux, 5 énigmes, 5 chemins.</p>
+    </section>
+
+    <section class="home-axes">
+        <h3>1 épreuve par axe</h3>
+        <hr>
+
+        <div class="axes-content">
+            <div class="axe">
+                <img src="img/axe-coding.png" alt="">
+                <h4>Coding</h4>
+                <p>Découvre les mystéres d’un nouveau langage</p>
+            </div>
+
+            <div class="axe">
+                <img src="img/axe-3d.png" alt="">
+                <h4>3D</h4>
+                <p>Elle est belle notre amphore, tu peux toucher avec les mains</p>
+            </div>
+
+            <div class="axe">
+                <img src="img/axe-jv.png" alt="">
+                <h4>Jeu vidéo</h4>
+                <p>Choisis bien, réponds bien</p>
+            </div>
+
+            <div class="axe">
+                <img src="img/axe-design.png" alt="">
+                <h4>Design</h4>
+                <p>Apollon aussi beau que futé ? Ca reste à prouver</p>
+            </div>
+
+            <div class="axe">
+                <img src="img/axe-cdeb.png" alt="">
+                <h4>CDEB</h4>
+                <p>Il a beau être messager. Hermès ne sait pas utiliser Insta</p>
+            </div>
+        </div>
+    </section>
+
     <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, voluptas. Ratione veritatis sed nobis ad, tempore quisquam aliquid consequatur facere voluptates vitae corrupti enim! Fugiat atque sapiente magnam ut pariatur?</p>
+        <h3>Énigmes</h3>
+
+        <div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <img src="" alt="">
+        </div>
     </section>
 
 <script>
@@ -82,7 +129,8 @@ TweenMax.to(".overlay h5", 2, {
 TweenMax.to(".overlay", 2, {
     delay: 12,
     opacity: 0,
-    ease: Expo.easeInOut
+    ease: Expo.easeInOut,
+    display: "none"
 })
 </script>
 
