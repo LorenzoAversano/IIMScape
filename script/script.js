@@ -4,12 +4,19 @@ $(document).ready(function() {
   });
 });
 
+var audio = document.getElementById("rain-audio");
+function playAudio() {
+  audio.play();
+}
+
 function open(left, right, lock) {
   TweenLite.to(left, 1.5, { width: 0 });
   TweenLite.to(right, 1.5, { width: 0 });
   lock.remove();
   TweenLite.to(lock, 1.5, { onComplete: function(){
       left.parent().remove();
+      audio.pause();
+      document.querySelector(".icon-audio").style.display = "none";
   }});
 }
 

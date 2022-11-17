@@ -339,4 +339,12 @@ h1{
     }
 }
 
-
+.icon-audio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: orange;
+}
