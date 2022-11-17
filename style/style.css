@@ -6,15 +6,18 @@
 
 @font-face {
   font-family: "DalekPinpoint";
-  src: url("../fonts/DalekPinpointBold.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../fonts/DalekPinpointBold.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
   font-family: "Alata";
-  src: url("../fonts/Alata-Regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../fonts/Alata-Regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
   font-family: "LouisGeorgeCafe";
-  src: url("../fonts/LouisGeorgeCafe.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../fonts/LouisGeorgeCafe.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 html {
   box-sizing: border-box;
@@ -218,7 +221,7 @@ h1 {
 }
 
 .key-button {
-  background-color: rgb(227, 130, 19);
+  background-color: #e38213;
   text-decoration: none;
   color: #fff;
   font-family: "DalekPinpoint";
@@ -292,7 +295,7 @@ h1 {
   width: 100%;
   height: 100vh;
   font-family: "DalekPinpoint";
-  background: rgb(26, 26, 26);
+  background: #1a1a1a;
   top: 0%;
   z-index: 100;
   display: flex;
@@ -340,7 +343,7 @@ h1 {
   padding: 50px;
 }
 .home-game h2 {
-  color: #111;
+  color: #683424;
   font-size: 96px;
   text-align: center;
   margin: 20px 10%;
@@ -380,6 +383,7 @@ h1 {
 }
 .home-explanations :nth-last-child(1) {
   font-family: "DalekPinpoint";
+  color: #683424;
 }
 
 .home-axes h3, .home-enigma h3 {
@@ -404,11 +408,9 @@ h1 {
   text-align: center;
   margin: 163px auto;
 }
-.home-axes .axe img {
-  background-color: #6DC8E5;
-}
 .home-axes .axe h4 {
   font-family: "DalekPinpoint";
+  color: #683424;
 }
 
 .img-enigma {
@@ -421,6 +423,14 @@ h1 {
   align-items: center;
   margin: 100px auto;
   width: 70%;
+  font-family: "LouisGeorgeCafe";
+  font-size: 30px;
+}
+.enigma h4 {
+  font-family: "DalekPinpoint";
+  font-size: 50px;
+  color: #683424;
+  margin: 45px auto;
 }
 
 .img-mute {
@@ -431,6 +441,20 @@ h1 {
   width: 34px;
 }
 
+.home-enigma {
+  background: linear-gradient(180deg, #FFFFFF 0%, #6DC8E5 8.33%, #6DC8E5 84.9%, #FFFFFF 100%);
+}
+.home-enigma p {
+  color: #fff;
+}
+.home-enigma h3 {
+  color: #fff;
+  padding-top: 100px;
+}
+.home-enigma hr {
+  border: 4px solid #fff;
+}
+
 footer {
   font-size: 16px;
   display: flex;
@@ -439,7 +463,7 @@ footer {
   width: 100%;
   height: 22.5em;
   margin: 0 auto;
-  background: #6DC8E5;
+  background: #fff;
   color: #ccc;
 }
 

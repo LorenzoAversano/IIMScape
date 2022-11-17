@@ -280,8 +280,6 @@ h1{
     height: 100vh;
 }
 
- 
-
 
 @keyframes example {
     0%   {
@@ -384,7 +382,7 @@ h1{
     }
 
     h2 {
-        color: #111;
+        color: #683424;
         font-size: 96px;
         text-align: center;
         margin: 20px 10%;
@@ -428,6 +426,7 @@ h1{
 
     :nth-last-child(1) {
         font-family: 'DalekPinpoint';
+        color: #683424;
     }
 }
 
@@ -454,15 +453,12 @@ h1{
         display: flex;
         text-align: center;
         margin: 163px auto;
-
     }
 
     .axe {
-        img {
-            background-color: #6DC8E5;
-        }
         h4{
             font-family: "DalekPinpoint";
+            color: #683424;
         }
     }
     mix-blend-mode: darken;
@@ -479,6 +475,15 @@ h1{
     align-items: center;
     margin: 100px auto;
     width: 70%;
+    font-family: 'LouisGeorgeCafe';
+    font-size: 30px;
+
+    h4 {
+        font-family: 'DalekPinpoint';
+        font-size: 50px;
+        color: #683424;
+        margin: 45px auto;
+    }
 }
 
 .img-mute {
@@ -489,6 +494,23 @@ h1{
     width: 34px;
 }
 
+.home-enigma {
+    background: linear-gradient(180deg, #FFFFFF 0%, #6DC8E5 8.33%, #6DC8E5 84.9%, #FFFFFF 100%);
+    
+    p {
+        color: #fff;
+    }
+
+    h3 {
+        color: #fff;
+        padding-top: 100px;
+    }
+
+    hr {
+        border: 4px solid #fff;
+    }
+}
+
 footer {
     font-size: 16px;
     display: flex;
@@ -497,7 +519,7 @@ footer {
     width: 100%;
     height: 22.5em;
     margin: 0 auto;
-    background: #6DC8E5;
+    background: #fff;
     color: #ccc;
 }
 
