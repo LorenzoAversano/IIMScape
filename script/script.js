@@ -23,12 +23,12 @@ function pauseAudio() {
 
 
 function open(left, right, lock) {
-  TweenLite.to(left, 1.5, { width: 0 });
-  TweenLite.to(right, 1.5, { width: 0 });
+  TweenLite.to(left, 2.5, { width: 0 });
+  TweenLite.to(right, 2.5, { width: 0 });
   lock.remove();
   imgmute.style.display = "none";
   imgaudio.style.display = "none";
-  TweenLite.to(lock, 1.5, { onComplete: function(){
+  TweenLite.to(lock, 2.5, { onComplete: function(){
       left.parent().remove();
       audio.pause();
       document.querySelector(".icon-audio").style.display = "none";
@@ -36,7 +36,7 @@ function open(left, right, lock) {
 }
 
 function unlock(el){
-  TweenLite.to(el, 0.5, { transform: "rotate(45deg)", onComplete: function(){
+  TweenLite.to(el, 1.5, { transform: "rotate(45deg)", onComplete: function(){
       open($(".door .left"), $(".door .right"), el);
   }})
 }
