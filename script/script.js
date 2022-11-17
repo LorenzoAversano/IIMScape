@@ -7,10 +7,10 @@ $(document).ready(function() {
 var audio = document.getElementById("rain-audio");
 var imgaudio = document.querySelector(".icon-audio");
 var imgmute = document.querySelector(".icon-mute");
-audio.volume = 0.2;
 
 function playAudio() {
   audio.play();
+  audio.volume = 0.2;
   imgaudio.style.display = "none";
   imgmute.style.display = "flex";
   imgmute.style.zIndex = "1000";
