@@ -416,8 +416,12 @@ h1 {
   font-family: "DalekPinpoint";
   color: #683424;
   width: 80%;
+  font-size: 26px;
   margin: 10px auto;
   justify-content: space-between;
+}
+.home-axes .axe p {
+  font-family: "LouisGeorgeCafe";
 }
 
 .img-enigma {
@@ -462,18 +466,6 @@ h1 {
   border: 4px solid #fff;
 }
 
-footer {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  height: 22.5em;
-  margin: 0 auto;
-  background: #fff;
-  color: #ccc;
-}
-
 .circle {
   width: 141px;
   height: 141px;
@@ -491,6 +483,30 @@ footer {
   cursor: pointer;
 }
 
+footer {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15.5em;
+  margin: 0 auto;
+  background: #fff;
+  color: #ccc;
+}
+
+.logo-footer {
+  margin: 10%;
+  display: flex;
+  justify-content: center;
+}
+.logo-footer .iim img {
+  width: 120%;
+}
+.logo-footer .oliimpus img {
+  width: 120%;
+}
+
 .axe-text p {
   width: 100px;
   display: flex;
@@ -499,17 +515,6 @@ footer {
 .axe-text h4 {
   font-family: "DalekPinpoint";
   margin-top: 20px;
-}
-
-.logo-footer {
-  width: 100px;
-  margin: 10%;
-}
-.logo-footer .iim img {
-  width: 120%;
-}
-.logo-footer .oliimpus img {
-  width: 120%;
 }
 
 /*# sourceMappingURL=style.css.map */
