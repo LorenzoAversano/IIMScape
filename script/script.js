@@ -10,7 +10,7 @@ var imgmute = document.querySelector(".icon-mute");
 
 function playAudio() {
   audio.play();
-  audio.volume = 0.1;
+  audio.volume = 0.2;
   imgaudio.style.display = "none";
   imgmute.style.display = "flex";
   imgmute.style.zIndex = "1000";
@@ -268,6 +268,13 @@ setInterval(function() {
       $("#sentence4").fadeOut(2000);
   });
 }, 19000);
+
+setInterval(function() {
+  $( document ).ready(function() {
+      $("#sentence5").fadeIn(2000);
+      $("#sentence5").fadeOut(2000);
+  });
+}, 23000);
 
 
 setTimeout(function(){

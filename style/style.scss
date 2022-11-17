@@ -233,6 +233,11 @@ h1{
     left: 20%;
 }
 
+.five{
+    top: 90%;
+    right: 20%;
+}
+
 .key {
     background-image: url(../img/success.jpg);
     mix-blend-mode: multiply;
@@ -459,6 +464,13 @@ h1{
         h4{
             font-family: "DalekPinpoint";
             color: #683424;
+            width: 80%;
+            margin: 0 auto; 
+            justify-content: space-between;
+    }
+
+    .axe {
+        img {
         }
     }
     mix-blend-mode: darken;
@@ -521,6 +533,36 @@ footer {
     margin: 0 auto;
     background: #fff;
     color: #ccc;
+}
+
+.circle{
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+    padding: 85px;
+    background-color: #6DC8E5;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DalekPinpoint';
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.axe-text{
+    p{
+        width: 100px;
+        display: flex;
+        margin: 0 auto;
+    }
+    h4{
+        font-family: "DalekPinpoint";
+        margin-top: 20px;
+    }
+
 }
 
 .logo-footer{
