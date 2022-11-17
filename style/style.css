@@ -311,6 +311,15 @@ h1 {
   font-size: 40px;
 }
 
+.icon-mute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+  mix-blend-mode: darken;
+}
+
 .icon-audio {
   position: absolute;
   top: 0;
@@ -389,12 +398,23 @@ h1 {
   border: 4px solid #000;
 }
 
+.home-axes {
+  mix-blend-mode: darken;
+}
 .home-axes .axes-content {
   display: flex;
   text-align: center;
 }
 .home-axes .axe img {
   background-color: #6DC8E5;
+}
+
+.img-mute {
+  width: 34px;
+}
+
+.img-audio {
+  width: 34px;
 }
 
 /*# sourceMappingURL=style.css.map */

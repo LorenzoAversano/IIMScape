@@ -5,14 +5,28 @@ $(document).ready(function() {
 });
 
 var audio = document.getElementById("rain-audio");
+var imgaudio = document.querySelector(".icon-audio");
+var imgmute = document.querySelector(".icon-mute");
+
 function playAudio() {
   audio.play();
+  imgaudio.style.display = "none";
+  imgmute.style.display = "flex";
+  imgmute.style.zIndex = "1000";
 }
+function pauseAudio() {
+  audio.pause();
+  imgaudio.style.display = "flex";
+  imgmute.style.display = "none";
+}
+
 
 function open(left, right, lock) {
   TweenLite.to(left, 1.5, { width: 0 });
   TweenLite.to(right, 1.5, { width: 0 });
   lock.remove();
+  imgmute.style.display = "none";
+  imgaudio.style.display = "none";
   TweenLite.to(lock, 1.5, { onComplete: function(){
       left.parent().remove();
       audio.pause();
