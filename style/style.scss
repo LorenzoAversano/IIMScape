@@ -402,8 +402,8 @@ h1{
         font-size: 30px;
         font-family: 'LouisGeorgeCafe';
         text-align: center;
-        padding: 10px 20px;
-        border-radius: 5px;
+        padding: 20px 30px;
+        border-radius: 65px;
         cursor: pointer;
         margin: 50px auto;
         width: fit-content;
@@ -505,6 +505,8 @@ h1{
 
 .home-enigma {
     background: linear-gradient(180deg, #FFFFFF 0%, #6DC8E5 8.33%, #6DC8E5 84.9%, #FFFFFF 100%);
+    padding-bottom: 100px;
+    padding-top: 20px;
     
     p {
         color: #fff;

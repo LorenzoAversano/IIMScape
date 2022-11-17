@@ -6,15 +6,18 @@
 
 @font-face {
   font-family: "DalekPinpoint";
-  src: url("../fonts/DalekPinpointBold.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../fonts/DalekPinpointBold.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
   font-family: "Alata";
-  src: url("../fonts/Alata-Regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../fonts/Alata-Regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
   font-family: "LouisGeorgeCafe";
-  src: url("../fonts/LouisGeorgeCafe.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url("../fonts/LouisGeorgeCafe.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 html {
   box-sizing: border-box;
@@ -223,7 +226,7 @@ h1 {
 }
 
 .key-button {
-  background-color: rgb(227, 130, 19);
+  background-color: #e38213;
   text-decoration: none;
   color: #fff;
   font-family: "DalekPinpoint";
@@ -297,7 +300,7 @@ h1 {
   width: 100%;
   height: 100vh;
   font-family: "DalekPinpoint";
-  background: rgb(26, 26, 26);
+  background: #1a1a1a;
   top: 0%;
   z-index: 100;
   display: flex;
@@ -359,8 +362,8 @@ h1 {
   font-size: 30px;
   font-family: "LouisGeorgeCafe";
   text-align: center;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 20px 30px;
+  border-radius: 65px;
   cursor: pointer;
   margin: 50px auto;
   width: fit-content;
@@ -450,6 +453,8 @@ h1 {
 
 .home-enigma {
   background: linear-gradient(180deg, #FFFFFF 0%, #6DC8E5 8.33%, #6DC8E5 84.9%, #FFFFFF 100%);
+  padding-bottom: 100px;
+  padding-top: 20px;
 }
 .home-enigma p {
   color: #fff;
