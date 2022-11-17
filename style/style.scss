@@ -454,10 +454,12 @@ h1{
 }
 
 .home-axes {
+
+    padding-bottom: 100px;
     .axes-content {
         display: flex;
         text-align: center;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         justify-content: space-around;
     }
@@ -466,13 +468,13 @@ h1{
         h4{
             font-family: "DalekPinpoint";
             color: #683424;
-            width: 80%;
             font-size: 26px;
             margin: 10px auto; 
             justify-content: space-between;
         }
         p{
             font-family: 'LouisGeorgeCafe';
+            font-size: 20px;
         }
     mix-blend-mode: darken;
     }
@@ -554,26 +556,14 @@ footer {
     margin: 0 auto;
     background: #fff;
     color: #ccc;
-}
-
-
-.logo-footer{
-    margin: 10%;
-    display: flex;
-    justify-content: center;
-    .iim img{
-        width: 120%;
-    }
-    .oliimpus img{
-        width: 120%;
-    }
+    justify-content: space-evenly;
+    padding: 200px 0 300px 0;
 }
 
 .axe-text{
     p{
-        width: 100px;
         display: flex;
-        margin: 0 auto;
+        margin: 0 15px;
     }
     h4{
         font-family: "DalekPinpoint";
@@ -582,3 +572,7 @@ footer {
 
 }
 
+.img-cdeb {
+    height: 400px;
+    margin-left: 60px;
+}
