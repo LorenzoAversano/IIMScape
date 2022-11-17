@@ -321,6 +321,7 @@ h1{
     display: none;
 }
 
+
 #player{
     display: none;
 }
@@ -364,7 +365,8 @@ h1{
     margin: 20px;
     cursor: pointer;
     z-index: 1000;
-    background-color: orange;
+    mix-blend-mode: darken;
+
 }
 
 .home-game {

@@ -10,6 +10,7 @@ var imgmute = document.querySelector(".icon-mute");
 
 function playAudio() {
   audio.play();
+  audio.volume = 0.1;
   imgaudio.style.display = "none";
   imgmute.style.display = "flex";
   imgmute.style.zIndex = "1000";
@@ -283,6 +284,15 @@ function lockLightning() {
   orage.src = "audio/bruitage-orage.mp3";
   orage.play();
 }
+
+function lockOpening() {
+  document.getElementById("lock-home").style.display = "block";
+  $("#lock-home").fadeOut(1300);
+  var door = new Audio();
+  door.src = "audio/door.mp3";
+  door.play();
+}
+
 
 
 var URL = "Vous cherchez la clé n'est ce pas ? Modifiez l'URL pour l'obtenir.";
