@@ -304,7 +304,7 @@ h1{
     }
 }
 
-#lock_home{
+#lock-home{
     animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -431,7 +431,7 @@ h1{
     }
 }
 
-.home-axes {
+.home-axes, .home-enigma {
 
     h3 {
         font-family: 'Alata';
@@ -439,6 +439,7 @@ h1{
         font-size: 64px;
         text-align: center;
         text-transform: uppercase;
+        margin-top: 150px;
     }
 
     hr {
@@ -452,15 +453,32 @@ h1{
     .axes-content {
         display: flex;
         text-align: center;
+        margin: 163px auto;
+
     }
 
     .axe {
         img {
             background-color: #6DC8E5;
         }
+        h4{
+            font-family: "DalekPinpoint";
+        }
     }
     mix-blend-mode: darken;
 
+}
+
+.img-enigma{
+    max-width: 45%;
+}
+
+.enigma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 70%;
 }
 
 .img-mute {
@@ -469,4 +487,27 @@ h1{
 
 .img-audio {
     width: 34px;
+}
+
+footer {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 22.5em;
+    margin: 0 auto;
+    background: #6DC8E5;
+    color: #ccc;
+}
+
+.logo-footer{
+    width: 100px;
+    margin: 10%;
+    .iim img{
+        width: 120%;
+    }
+    .oliimpus img{
+        width: 120%;
+    }
 }
